@@ -1431,12 +1431,7 @@ MonoBehaviour:
     - m_Data: 54746
     m_LastClickedID:
       m_Data: 54746
-    m_ExpandedIDs:
-    - m_Data: 0
-    - m_Data: 55142
-    - m_Data: 55144
-    - m_Data: 55146
-    - m_Data: 55148
+    m_ExpandedIDs: []
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1467,12 +1462,7 @@ MonoBehaviour:
     m_SelectedIDs: []
     m_LastClickedID:
       m_Data: 0
-    m_ExpandedIDs:
-    - m_Data: 0
-    - m_Data: 55142
-    - m_Data: 55144
-    - m_Data: 55146
-    - m_Data: 55148
+    m_ExpandedIDs: []
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
