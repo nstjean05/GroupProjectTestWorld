@@ -54,6 +54,7 @@ Check your email for a GitHub collaboration invite from **nstjean05**. Click the
 3. Click the **GitHub.com** tab — the shared repo should appear in your list
 4. Choose a location on your computer to save it
 5. Click **Clone**
+6. GitHub Desktop will show a popup asking **"Initialize Git LFS"** — click **Initialize Git LFS**. This is required or your assets will not download correctly.
 
 > GitHub Desktop will automatically fetch all LFS files during cloning. This is why cloning is required instead of using a ZIP download.
 
@@ -65,6 +66,7 @@ Check your email for a GitHub collaboration invite from **nstjean05**. Click the
 2. Click **Add → Add project from disk**
 3. Navigate to the folder where you cloned the repo and select it
 4. Open the project — Unity will reimport everything automatically *(this may take a few minutes the first time)*
+5. Once loaded, Unity will open to a blank scene by default. In the **Project panel** at the bottom, navigate to **Assets/Scenes/** and **double-click `SpaceShipScene.unity`** to load the world. Unity will not do this automatically.
 
 ---
 
