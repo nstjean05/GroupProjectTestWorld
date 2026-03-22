@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e3362999788c34bbc83f581a2e3300e5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - muzzlePoint: {instanceID: 0}
+  - projectilePrefab: {instanceID: 0}
+  - lineRenderer: {instanceID: 0}
+  - laserGlow: {instanceID: 0}
+  - asteroidObject: {fileID: 919132149155446097, guid: 1405eddd3cd354210ae9e1c2e8edd308, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
