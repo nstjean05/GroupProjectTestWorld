@@ -9,7 +9,17 @@ Running under Rosetta:   NO
 Available memory:        32768 MB
 Date:                    2026-03-22T23:30:47Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
+<<<<<<< Updated upstream
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-noahst.jean" at "2026-03-22T23:30:47.115878Z"
+=======
+Built from '6000.3/staging' branch; Version is '6000.3.7f1 (696ec25a53d1) revision 6909634'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 32577 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-davei" at "2026-03-23T03:14:24.1692122Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-03-23T03:14:24Z
+>>>>>>> Stashed changes
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.3.8f1/Unity.app/Contents/MacOS/Unity
@@ -19,6 +29,7 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< Updated upstream
 /Users/noahst.jean/Unity/GroupProjectTestWorld
 -logFile
 Logs/AssetImportWorker0.log
@@ -28,13 +39,31 @@ Logs/AssetImportWorker0.log
 LicenseClient-noahst.jean
 -job-worker-count
 5
+=======
+C:/Users/davei/OneDrive/Documents/GitHub/GroupProjectTestWorld
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61827
+-licensingIpc
+LicenseClient-davei
+-job-worker-count
+9
+>>>>>>> Stashed changes
 -background-job-worker-count
 8
 -gc-helper-count
 1
+<<<<<<< Updated upstream
 -name AssetImport
 Successfully changed project path to: /Users/noahst.jean/Unity/GroupProjectTestWorld
 /Users/noahst.jean/Unity/GroupProjectTestWorld
+=======
+-name
+AssetImport
+Successfully changed project path to: C:/Users/davei/OneDrive/Documents/GitHub/GroupProjectTestWorld
+C:/Users/davei/OneDrive/Documents/GitHub/GroupProjectTestWorld
+>>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
@@ -64,6 +93,7 @@ Successfully changed project path to: /Users/noahst.jean/Unity/GroupProjectTestW
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+<<<<<<< Updated upstream
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -77,6 +107,16 @@ Player connection [8482426880]  * "[IP] 192.168.0.107 [Port] 0 [Flags] 2 [Guid] 
 Player connection [8482426880] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8482426880] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
+=======
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [35836]  Target information:
+
+Player connection [35836]  * "[IP] 10.6.1.11 [Port] 0 [Flags] 2 [Guid] 1386012327 [EditorId] 1386012327 [Version] 1048832 [Id] WindowsEditor(7,UNBREAKABLEPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [35836] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [35836] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
+>>>>>>> Stashed changes
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -87,6 +127,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 12.48 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.8f1 (1c7db571dde0)
@@ -125,18 +166,50 @@ Registered in 0.001543 seconds.
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-noahst.jean-notifications" at "2026-03-22T23:30:47.778199Z"
 [Licensing::Module] Licensing Background thread has ended after 0.66s
 - Loaded All Assemblies, in  0.311 seconds
+=======
+Refreshing native plugins compatible for Editor in 14.30 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.7f1 (696ec25a53d1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/davei/OneDrive/Documents/GitHub/GroupProjectTestWorld/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2216)
+    Vendor:   NVIDIA
+    VRAM:     10051 MB
+    Driver:   32.0.15.9579
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56524
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001956 seconds.
+- Loaded All Assemblies, in  0.370 seconds
+>>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.324 seconds
 Domain Reload Profiling: 635ms
 	BeginReloadAssembly (105ms)
+=======
+- Finished resetting the current domain, in  0.399 seconds
+Domain Reload Profiling: 766ms
+	BeginReloadAssembly (127ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (10ms)
@@ -159,15 +232,43 @@ Domain Reload Profiling: 635ms
 			BeforeProcessingInitializeOnLoad (74ms)
 			ProcessInitializeOnLoadAttributes (126ms)
 			ProcessInitializeOnLoadMethodAttributes (48ms)
+=======
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (155ms)
+		LoadAssemblies (124ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (152ms)
+			TypeCache.Refresh (151ms)
+				TypeCache.ScanAssembly (139ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (399ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (366ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (50ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
+<<<<<<< Updated upstream
 [CoreBusinessMetrics] Unexpected thread when updating session info.
+=======
+>>>>>>> Stashed changes
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 3574382044556-UnityPersXXXX
@@ -178,6 +279,28 @@ Begin MonoManager ReloadAssembly
 Refreshing native plugins compatible for Editor in 0.54 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
+=======
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              f473e69f4e3b4430b8118d72aa048150
+  Correlation Id:          cda298985c427e65c0749ae300a62a50
+  External correlation Id: 2364372269499801338
+  Machine Id:              5OtKc1d7crj9o3tT3+B2B80c+Qc=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-davei" (connect: 0.00s, validation: 0.00s, handshake: 1.80s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-davei-notifications" at "2026-03-23T03:14:25.968122Z"
+[Licensing::Module] Licensing Background thread has ended after 1.80s
+[Licensing::Module] Licensing is initialized (took 0.03s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 3574381086677-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  0.778 seconds
+Refreshing native plugins compatible for Editor in 3.42 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+>>>>>>> Stashed changes
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -185,6 +308,7 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.586 seconds
 Domain Reload Profiling: 1180ms
 	BeginReloadAssembly (95ms)
@@ -239,18 +363,75 @@ Received Import Request.
   path: Assets/Planets/2k_saturn_ring_alpha.png
   artifactKey: Guid(52ac946b1b6f4415aabc4133a5d626d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Planets/2k_saturn_ring_alpha.png using Guid(52ac946b1b6f4415aabc4133a5d626d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e8c47d840aac1a1433af64d63fd7af0a') in 0.063147625 seconds
+=======
+- Finished resetting the current domain, in  0.690 seconds
+Domain Reload Profiling: 1463ms
+	BeginReloadAssembly (195ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (501ms)
+		LoadAssemblies (363ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (228ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (137ms)
+			BuildScriptInfoCaches (64ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (690ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (514ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (322ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 3.26 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7123 unused Assets / (4.7 MB). Loaded Objects now: 7930.
+Memory consumption went from 154.6 MB to 149.9 MB.
+Total: 7.356100 ms (FindLiveObjects: 0.498900 ms CreateObjectMapping: 0.482400 ms MarkObjects: 4.162300 ms  DeleteObjects: 2.211000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19303.116686 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Small/Textures/Up_Small.png
+  artifactKey: Guid(b6c81d1f5e954a54bbe15b4f163d2e1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Small/Textures/Up_Small.png using Guid(b6c81d1f5e954a54bbe15b4f163d2e1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b32de68577e1ff04c470727b03f8984') in 0.1012919 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000039 seconds.
   path: Assets/Scenes/SpaceShipScene.unity
   artifactKey: Guid(4a6ef791ab3cf45e29aab065efd670cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Scenes/SpaceShipScene.unity using Guid(4a6ef791ab3cf45e29aab065efd670cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c539943c9a5e1a60cd397987bb27d68') in 0.005326 seconds
+=======
+  Time since last request: 0.000017 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Medium/Textures/Down_Medium.png
+  artifactKey: Guid(e85879f228f8b744ea357b8333487cab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Medium/Textures/Down_Medium.png using Guid(e85879f228f8b744ea357b8333487cab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b367786d26bd1facb777434da8036043') in 0.0387335 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000038 seconds.
   path: Assets/Planets/Jupiter.blend
   artifactKey: Guid(618e24d9ac4b94f9eba00d8783841c6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -263,26 +444,55 @@ Received Import Request.
   path: Assets/Planets/2k_saturn.jpg
   artifactKey: Guid(5b59947a7dd654fb0ac0e9b2c4924894) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Planets/2k_saturn.jpg using Guid(5b59947a7dd654fb0ac0e9b2c4924894) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49514614423c686abfefc13e5b629614') in 0.004595916 seconds
+=======
+  Time since last request: 0.000016 seconds.
+  path: Assets/Audio
+  artifactKey: Guid(796a6f44cee24a1469c5e16414d93ef3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Audio using Guid(796a6f44cee24a1469c5e16414d93ef3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e03452e855e9c3dae0f0719c4e09cf04') in 0.0029402 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000035 seconds.
   path: Assets/Scenes/SampleScene.unity
   artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5ee057b34ee2b8796e3ecace8ab1d8f6') in 0.004584833 seconds
+=======
+  Time since last request: 0.000024 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 5/Medium/Textures/Back_Medium.png
+  artifactKey: Guid(2f7e278d6fd9bbe4b81a9260743439c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 5/Medium/Textures/Back_Medium.png using Guid(2f7e278d6fd9bbe4b81a9260743439c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b7adbf870f66a8f932ae41290cccab8') in 0.0234277 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000032 seconds.
   path: Assets/Planets/2k_moon.jpg
   artifactKey: Guid(3eb98d342f4a649d69c381e0af05d6db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Planets/2k_moon.jpg using Guid(3eb98d342f4a649d69c381e0af05d6db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22bc820a118d35ece7a5c52cc0205af1') in 0.006009583 seconds
+=======
+  Time since last request: 0.000013 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Prefabs/Interactors/Teleport Interactor.prefab
+  artifactKey: Guid(c1800acf6366418a9b5f610249000331) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Prefabs/Interactors/Teleport Interactor.prefab using Guid(c1800acf6366418a9b5f610249000331) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '669b44fef841d1c1b88805abc3001b93') in 0.2359989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 38
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Medium/Textures/Left_Space 1 Medium.png
+  artifactKey: Guid(f204e0e6d4b82d4479204048d047835d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Medium/Textures/Left_Space 1 Medium.png using Guid(f204e0e6d4b82d4479204048d047835d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3df29de8b672c8fc6bafd0781d406e68') in 0.0207932 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000040 seconds.
   path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph
   artifactKey: Guid(a3d800b099a06e0478fb790c5e79057a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -303,18 +513,32 @@ Received Import Request.
   path: Assets/TutorialInfo/Layout.wlt
   artifactKey: Guid(eabc9546105bf4accac1fd62a63e88e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/TutorialInfo/Layout.wlt using Guid(eabc9546105bf4accac1fd62a63e88e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3b07ffc4f34f53d2f5a0de20ce8e8edb') in 0.003399792 seconds
+=======
+  Time since last request: 0.000024 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 5/Medium
+  artifactKey: Guid(1b0f5ab544cc7804ca52a8ffc79ee1e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 5/Medium using Guid(1b0f5ab544cc7804ca52a8ffc79ee1e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '500775d62030639bd8c074835459bf2c') in 0.002801 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000035 seconds.
   path: Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
   artifactKey: Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt using Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0b6e8ec8a81ba520e9961d3d97eafb01') in 0.001387209 seconds
+=======
+  Time since last request: 0.000019 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 5/Small
+  artifactKey: Guid(af36abac22e33a84ea3cc4056551c771) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 5/Small using Guid(af36abac22e33a84ea3cc4056551c771) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f50c2fe58c79295eb06c772ae1feb846') in 0.0032559 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000043 seconds.
   path: Assets/Planets/Mars.blend
   artifactKey: Guid(bfe0c7bb610fc4bb0b465e8190a3eef4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -327,10 +551,17 @@ Received Import Request.
   path: Assets/Planets/2k_sun.jpg
   artifactKey: Guid(51efe65ba2b784f2384796e3c611f22a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Planets/2k_sun.jpg using Guid(51efe65ba2b784f2384796e3c611f22a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'de77e05ee20e2509fc9331c133f56015') in 0.003645334 seconds
+=======
+  Time since last request: 0.000015 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2
+  artifactKey: Guid(e9aa9ae88b69cba45ac432c276322238) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2 using Guid(e9aa9ae88b69cba45ac432c276322238) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e26ec8bfde0c99ea7257d6c4080a7d31') in 0.0030377 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000027 seconds.
   path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph
   artifactKey: Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -680,10 +911,18 @@ Received Import Request.
   artifactKey: Guid(fd09957580ac4326916010f1f260975b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd using Guid(fd09957580ac4326916010f1f260975b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'abede9757c4588b5b65cd2a5cf5ba6f8') in 0.005864 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+=======
+  Time since last request: 0.000015 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Large/Skybox_Space 3 Large.mat
+  artifactKey: Guid(9e07b5f1ebeb2764ea80a163086f4ba7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Large/Skybox_Space 3 Large.mat using Guid(9e07b5f1ebeb2764ea80a163086f4ba7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e0300f2ba623710a39dd965413390c9a') in 0.4566491 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+>>>>>>> Stashed changes
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000026 seconds.
+<<<<<<< Updated upstream
   path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs
   artifactKey: Guid(dc20866c0d5e413ab7559440e15333ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs using Guid(dc20866c0d5e413ab7559440e15333ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '009f4502b3e7fb608b3a1c9755a52195') in 0.001651167 seconds
@@ -711,10 +950,16 @@ Received Import Request.
   path: Assets/Planets/2k_neptune.jpg
   artifactKey: Guid(c06735af5727244cc836dd193174c821) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Planets/2k_neptune.jpg using Guid(c06735af5727244cc836dd193174c821) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8ee403cc6a48a42038320d93e30784d') in 0.003694709 seconds
+=======
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Medium
+  artifactKey: Guid(c13252091096a8045a6388f12353554d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Medium using Guid(c13252091096a8045a6388f12353554d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0915c30dc74ee3cc261e9f64a7a31649') in 0.0026174 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000037 seconds.
   path: Assets/HitRed.mat
   artifactKey: Guid(b3a95aa64b7334dba8e8d2b1a2968466) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -799,18 +1044,32 @@ Received Import Request.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/AffordanceThemes/PokeSphereInteraction.asset
   artifactKey: Guid(c2712227db89c5142adad58b143bf039) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/AffordanceThemes/PokeSphereInteraction.asset using Guid(c2712227db89c5142adad58b143bf039) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9b4d325080c3a3149c861f326d138283') in 0.003427333 seconds
+=======
+  Time since last request: 0.000027 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 5/Small/Textures/Right_Small.png
+  artifactKey: Guid(daa2db5c03ff9574ea2020a609d10439) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 5/Small/Textures/Right_Small.png using Guid(daa2db5c03ff9574ea2020a609d10439) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '30f6ada3fe6a9536ead29dc3874e273c') in 0.0099036 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000043 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Materials/Dark Grey.mat
   artifactKey: Guid(1259871dce0d94e379ba03a83bd67493) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Materials/Dark Grey.mat using Guid(1259871dce0d94e379ba03a83bd67493) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '14b049eac982ed0b19eaa644f7ab02b8') in 0.002319375 seconds
+=======
+  Time since last request: 0.000022 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 5
+  artifactKey: Guid(05a8ce8b3a6c14949ad93591d98d9a52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 5 using Guid(05a8ce8b3a6c14949ad93591d98d9a52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7992dfc434aa2efa5a99885ea16a2566') in 0.0035809 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000030 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Materials/Controller_Grey.mat
   artifactKey: Guid(99685157b02e4d446bbecb015645e5e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -831,18 +1090,32 @@ Received Import Request.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Materials/HoloTableBlue.mat
   artifactKey: Guid(d9f6a1fff93304b3e9d0d5cf9a237363) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Materials/HoloTableBlue.mat using Guid(d9f6a1fff93304b3e9d0d5cf9a237363) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47644b3f161d9ca1e27fa3aa3fde3297') in 0.002111166 seconds
+=======
+  Time since last request: 0.000015 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Down_Space 1 Large.png
+  artifactKey: Guid(e6b4351057222e8438c988b8ce155b1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Down_Space 1 Large.png using Guid(e6b4351057222e8438c988b8ce155b1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '869b86fce1232fc3dcde04a7ae88a602') in 0.0628873 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000045 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Animations/ArrowBounce.anim
   artifactKey: Guid(ebfa13455423c254e943b87bf6e1f310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Animations/ArrowBounce.anim using Guid(ebfa13455423c254e943b87bf6e1f310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bfe9a3746f39bd57e9864c99258a9072') in 0.002611333 seconds
+=======
+  Time since last request: 0.000011 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 5/Small/Textures/Front_Small.png
+  artifactKey: Guid(c1123a8ea1e770b4c91aa080a45a7a37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 5/Small/Textures/Front_Small.png using Guid(c1123a8ea1e770b4c91aa080a45a7a37) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1221e2d222f88cab0bf01829169f72d') in 0.0078455 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000032 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Animations/Climb Teleport Arrow.controller
   artifactKey: Guid(db6239f7ccb29ca4aac63126c6a35e7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -879,10 +1152,17 @@ Received Import Request.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/AffordanceThemes/HighlightStrengthInteraction.asset
   artifactKey: Guid(795305341a8dbbd46ae54e9a01d6ea95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/AffordanceThemes/HighlightStrengthInteraction.asset using Guid(795305341a8dbbd46ae54e9a01d6ea95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b14f1fce98facea94ba9290f69569fd6') in 0.002251583 seconds
+=======
+  Time since last request: 0.000017 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Small/Textures/Down_Space 1 Small.png
+  artifactKey: Guid(89cb1494f355e1647abc44e81eb13cb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Small/Textures/Down_Space 1 Small.png using Guid(89cb1494f355e1647abc44e81eb13cb0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54e362cf74b5f7eb83d5190ae9e9e527') in 0.0074418 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000041 seconds.
   path: Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset
   artifactKey: Guid(7a99b757d54864ccdaeb205c7b42427a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -1015,11 +1295,74 @@ Received Import Request.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/TunnelingVignette/TunnelingVignetteHemisphere.fbx
   artifactKey: Guid(5833e680dc0f7ae47aec6b4286570484) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/TunnelingVignette/TunnelingVignetteHemisphere.fbx using Guid(5833e680dc0f7ae47aec6b4286570484) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2de944dd9c00c682e3e0936dda164c13') in 0.004503208 seconds
+=======
+  Time since last request: 0.000028 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Small/Textures/Up_Skybox_Space 2 Small.png
+  artifactKey: Guid(81eb24afd79873b408dd207831e625de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Small/Textures/Up_Skybox_Space 2 Small.png using Guid(81eb24afd79873b408dd207831e625de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1096c5edd4157ba16c2f9b46e84b2dfe') in 0.007811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Small/Skybox_Space 3 Small.mat
+  artifactKey: Guid(f7f800d56bc6c824a9bc54e982d4ed0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Small/Skybox_Space 3 Small.mat using Guid(f7f800d56bc6c824a9bc54e982d4ed0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c4a0008bdf616818a6f65dfef0c68d3') in 0.0256744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 4/Small/Textures/Up_Small.png
+  artifactKey: Guid(cc07f5aabb9ca7040ac8ec1cb449afd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 4/Small/Textures/Up_Small.png using Guid(cc07f5aabb9ca7040ac8ec1cb449afd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f944c80f1c3100f579e4485b160adfb3') in 0.0090889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Right_Space 1 Large.png
+  artifactKey: Guid(dad70adf15a0a5e4d859dad154f91d9d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Textures/Right_Space 1 Large.png using Guid(dad70adf15a0a5e4d859dad154f91d9d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0104300d9da406a086327c6ab1c13765') in 0.0619897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Medium/Textures/Front_Space 1 Medium.png
+  artifactKey: Guid(3a5e5648c0d7e8f448d05fc0c57d4900) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Medium/Textures/Front_Space 1 Medium.png using Guid(3a5e5648c0d7e8f448d05fc0c57d4900) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b2a7d76b0ec8681e8c1d7abaf369f6c') in 0.0192484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 4/Medium/Textures/Down_Medium.png
+  artifactKey: Guid(e6239087ac6767a4181811c70dbf62d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 4/Medium/Textures/Down_Medium.png using Guid(e6239087ac6767a4181811c70dbf62d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '686ec9a8ce3c81d47b66bc6f10fd16c3') in 0.0200074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Large/Skybox_Space 1 Large.mat
+  artifactKey: Guid(0a98eaa61401f3c49a068e4fbd6c2e2a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Large/Skybox_Space 1 Large.mat using Guid(0a98eaa61401f3c49a068e4fbd6c2e2a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9a8bfb2b094b56529be6d0dd9a20cb8e') in 0.3650572 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 4/Large/Skybox_Space 4 Large.mat
+  artifactKey: Guid(bcd3417f7c4e30d40bdf0dc5002ae1fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 4/Large/Skybox_Space 4 Large.mat using Guid(bcd3417f7c4e30d40bdf0dc5002ae1fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '044346103c25ea190fb5d3f121c3fad3') in 0.0573205 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000032 seconds.
+<<<<<<< Updated upstream
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs
   artifactKey: Guid(f4b9da94370444448aa6dcb1598d0dae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Scripts/XRInteractionSimulatorInputFeedbackUI.cs using Guid(f4b9da94370444448aa6dcb1598d0dae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bd26ca01bcd83e9527fd1f15797299d0') in 0.00163975 seconds
@@ -1079,10 +1422,16 @@ Received Import Request.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Hand Expressions/Fist Expression Capture.asset
   artifactKey: Guid(fa004868963da45f6a2e6520cfd82522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Hand Expressions/Fist Expression Capture.asset using Guid(fa004868963da45f6a2e6520cfd82522) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aa4c106ec6bbe64676fc839e9a426db4') in 0.0016745 seconds
+=======
+  path: Assets/Free Skyboxes - Space/SBS Space 5/SBS Space 5.asset
+  artifactKey: Guid(ce9696d905b3d924a9c52bf2cd38cb7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 5/SBS Space 5.asset using Guid(ce9696d905b3d924a9c52bf2cd38cb7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5338c8ed37ece0ba39bde473851dafde') in 0.0038354 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000049 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Controller/ControllerRight.png
   artifactKey: Guid(e854b252bbd914e019576e0089dfc2d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -1112,10 +1461,58 @@ Received Import Request.
   artifactKey: Guid(b658f477a2ba14f238604081771bf274) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Hands/LeftHandOutline@2x.png using Guid(b658f477a2ba14f238604081771bf274) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9efc961bd123cb1a753529044128c4e1') in 0.003527916 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+=======
+  Time since last request: 0.000015 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3
+  artifactKey: Guid(fa42a53ca2b251342b6e3ba2a7b51f4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3 using Guid(fa42a53ca2b251342b6e3ba2a7b51f4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c089cd5e8cd068e53267630d3a5884f') in 0.003251 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Large
+  artifactKey: Guid(e7dadc6216e79ce4f9b729e51b4220f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Large using Guid(e7dadc6216e79ce4f9b729e51b4220f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ca6b7d54caa6dc015744601e2285b7a') in 0.0027495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Medium/Skybox_Space 3 Medium.mat
+  artifactKey: Guid(412f5114ffdfb224090e321b3492cdd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Medium/Skybox_Space 3 Medium.mat using Guid(412f5114ffdfb224090e321b3492cdd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '325a03fbd2d04e714f1bb49f6b1d0683') in 0.0965857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Prefabs/asteroidObject.prefab
+  artifactKey: Guid(838b92ae2ed831d4892bb3325104f3d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Prefabs/asteroidObject.prefab using Guid(838b92ae2ed831d4892bb3325104f3d7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ae8db707d1802510190b93e41d86de1f') in 0.0227407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.827974 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Medium/Textures
+  artifactKey: Guid(00b92965740e6204284fc9b53d604c71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Medium/Textures using Guid(00b92965740e6204284fc9b53d604c71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '547e4b7a214c23699ef04d2e4a7b58e3') in 0.0045253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Medium/Textures/Down_Skybox_Space 2 Medium.png
+  artifactKey: Guid(f23add65347490a47b4c9be27db535dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Medium/Textures/Down_Skybox_Space 2 Medium.png using Guid(f23add65347490a47b4c9be27db535dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0b7e8d7fd36adc1e60f8e3ed492a0d80') in 0.0160228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+>>>>>>> Stashed changes
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
+<<<<<<< Updated upstream
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Editor/Scripts/StarterAssetsSampleProjectValidation.cs
   artifactKey: Guid(ef67ceb22b2224643a2d5004fc2a678a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Editor/Scripts/StarterAssetsSampleProjectValidation.cs using Guid(ef67ceb22b2224643a2d5004fc2a678a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8bac6785fb6bd9ce419048957ba3433e') in 0.001055417 seconds
@@ -1159,11 +1556,49 @@ Received Import Request.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/DemoSceneAssets/Textures/Concrete_Metallic.tif
   artifactKey: Guid(f3fb518ec70eb4047b1c6ec34933fbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/DemoSceneAssets/Textures/Concrete_Metallic.tif using Guid(f3fb518ec70eb4047b1c6ec34933fbce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9f662707e21c83804a2a5d3720f369cb') in 0.003607333 seconds
+=======
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Medium/Textures
+  artifactKey: Guid(dd82442cd6df6914599a94e5573b453c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Medium/Textures using Guid(dd82442cd6df6914599a94e5573b453c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cf019e27355a31cfdfabf3162ee08e68') in 0.0024697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Large/Textures/Right_Large.png
+  artifactKey: Guid(7996cec8466051440b27b48304235db4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Large/Textures/Right_Large.png using Guid(7996cec8466051440b27b48304235db4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ea822338ef7587f7d0894d91d4c9a43') in 0.0557068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Free Skyboxes - Space/Demo Scenes/SBS Space 1.unity
+  artifactKey: Guid(5c05ce3d834bd32449956e56cad8c46a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/Demo Scenes/SBS Space 1.unity using Guid(5c05ce3d834bd32449956e56cad8c46a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2cb13725a228336d95c1be1feb5fa720') in 0.0047893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Small
+  artifactKey: Guid(841bca22161158a43a436c2cc1180961) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Small using Guid(841bca22161158a43a436c2cc1180961) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f6de2c98a4c98acdd2cbf13cda2c0b3') in 0.0035513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 4/SBS Space 4.asset
+  artifactKey: Guid(1af3fd194b4bbb9499fbd0ce8c006bca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 4/SBS Space 4.asset using Guid(1af3fd194b4bbb9499fbd0ce8c006bca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63208dd9530600b00d5aab7fc7d63bce') in 0.0033757 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000026 seconds.
+<<<<<<< Updated upstream
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/DemoSceneAssets/Settings/TeleportDestinationSettings.asset
   artifactKey: Guid(8d66c9762e1587643a1164368c8a2c58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/DemoSceneAssets/Settings/TeleportDestinationSettings.asset using Guid(8d66c9762e1587643a1164368c8a2c58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1a4d74fa2ce1812ec37bd5cfdea24965') in 0.003851667 seconds
@@ -1247,10 +1682,16 @@ Received Import Request.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Filters/AnyGazedAtTeleportAnchorFilter.asset
   artifactKey: Guid(0f906c94e2aa0c3488832acc1db04295) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Filters/AnyGazedAtTeleportAnchorFilter.asset using Guid(0f906c94e2aa0c3488832acc1db04295) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8399d00a2802995c559759aa6b9bf8f2') in 0.00179075 seconds
+=======
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6788eb029fb594f43336532b43fac954') in 0.0058243 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000029 seconds.
   path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs
   artifactKey: Guid(103e0a6a1d404693b9fb1a5173e0e979) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -1391,26 +1832,86 @@ Received Import Request.
   path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg
   artifactKey: Guid(03d0538de6e24c0f819bfc9ce084dfa9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg using Guid(03d0538de6e24c0f819bfc9ce084dfa9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '217f98b06d55317c1ec695cd2c9a997e') in 0.0032665 seconds
+=======
+  Time since last request: 0.000013 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Small/Textures
+  artifactKey: Guid(788902d32995ec8428e426bfd221d841) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Small/Textures using Guid(788902d32995ec8428e426bfd221d841) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f3c01eee9df0092a50f8b3d073b7650') in 0.0030406 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000023 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/AffordanceThemes/PokeSphereColor.asset
   artifactKey: Guid(fc690d1505c48cb4696838b71abd2ca0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/AffordanceThemes/PokeSphereColor.asset using Guid(fc690d1505c48cb4696838b71abd2ca0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '358a9aa087546b2f6b46390c727a3dd4') in 0.001976042 seconds
+=======
+  Time since last request: 0.000018 seconds.
+  path: Assets/_Recovery
+  artifactKey: Guid(c204f059c9c084b48836814c767d400f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Recovery using Guid(c204f059c9c084b48836814c767d400f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4cb7eb1c0ebcc38ceb539770ea9eabdb') in 0.0023633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/AsteroidBehaviour.cs
+  artifactKey: Guid(37dd695b0611f9f4f93bf9ca9296a3f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/AsteroidBehaviour.cs using Guid(37dd695b0611f9f4f93bf9ca9296a3f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c3fb4eb62b3e9b20c8488746d467bfa7') in 0.0045451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Audio/jeremayjimenez-taiwan-eas-alarm-501825.mp3
+  artifactKey: Guid(347d4c582cd9da54ba4cf63d67e1f205) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Audio/jeremayjimenez-taiwan-eas-alarm-501825.mp3 using Guid(347d4c582cd9da54ba4cf63d67e1f205) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4eb984ceb66e6bb625d78bdf36dd5db5') in 0.0138228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 1/Small/Textures/Right_Space 1 Small.png
+  artifactKey: Guid(06dedfca4113f89409a2d89a6d23767e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 1/Small/Textures/Right_Space 1 Small.png using Guid(06dedfca4113f89409a2d89a6d23767e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3d1f8e1ad54ca060b1054e5ca9bac0b4') in 0.0087752 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000026 seconds.
+<<<<<<< Updated upstream
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Editor/XRInteractionSimulatorProjectValidation.cs
   artifactKey: Guid(89074f9ebdc424d6fbe981bc7d49e7be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/Editor/XRInteractionSimulatorProjectValidation.cs using Guid(89074f9ebdc424d6fbe981bc7d49e7be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '06a14ff55a1f59f0fcd3caf8f43f9e96') in 0.001065625 seconds
+=======
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Large/Textures/Front_Large.png
+  artifactKey: Guid(88a6a5f3bd269e0409ec34a1e9177389) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Large/Textures/Front_Large.png using Guid(88a6a5f3bd269e0409ec34a1e9177389) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '03cb1932d6dbc67d955266fd6f73debe') in 0.046863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 5/Medium/Textures/Up_Medium.png
+  artifactKey: Guid(8525860a718e3f74996041e28fa3c8c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 5/Medium/Textures/Up_Medium.png using Guid(8525860a718e3f74996041e28fa3c8c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3061c56905a01f96c3a9d0e9169f78a9') in 0.0169957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scripts/OrbitScript.cs
+  artifactKey: Guid(228c422769410f84ca9c76f78d941c92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/OrbitScript.cs using Guid(228c422769410f84ca9c76f78d941c92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7104d23e6acc1b7d28b7765f91e2ff0e') in 0.0052695 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000029 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/DemoSceneAssets/Prefabs/Poke Interactions Sample.prefab
   artifactKey: Guid(88246f8e9c3765d49be8da34eca3c630) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -1423,10 +1924,17 @@ Received Import Request.
   path: Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
   artifactKey: Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader using Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '147f1c9e6aab80f879eb93df82e1f76b') in 0.002148 seconds
+=======
+  Time since last request: 0.000014 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/SBS Space 3.asset
+  artifactKey: Guid(8cffd043f98672146ac7e49014ccbbe7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/SBS Space 3.asset using Guid(8cffd043f98672146ac7e49014ccbbe7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23005b1d8a1ba7c87c9f7df8a477f01a') in 0.0033836 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000034 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Scripts/GazeInputManager.cs
   artifactKey: Guid(6ef0e4723b64c884699a375196c13ac0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -1439,10 +1947,17 @@ Received Import Request.
   path: Assets/TextMesh Pro/Sprites/EmojiOne.json
   artifactKey: Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/TextMesh Pro/Sprites/EmojiOne.json using Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8ffca295885ed2abad55d7075a429f6') in 0.001850792 seconds
+=======
+  Time since last request: 0.000019 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Large/Textures/Down_Large.png
+  artifactKey: Guid(a5843ef05e516d04c90a16715f70ff22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Large/Textures/Down_Large.png using Guid(a5843ef05e516d04c90a16715f70ff22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '84536b8d4c02e649c317022bc007c175') in 0.048985 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000054 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/Prefabs/Controllers/XR Controller Left.prefab
   artifactKey: Guid(1392f805216c47742996d4742c80721c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -1455,10 +1970,17 @@ Received Import Request.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/DemoSceneAssets/Textures/Concrete_Normal.tif
   artifactKey: Guid(cdebec39dbf81a14688e1de8d12897b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Samples/XR Interaction Toolkit/3.3.1/Starter Assets/DemoSceneAssets/Textures/Concrete_Normal.tif using Guid(cdebec39dbf81a14688e1de8d12897b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0589368b9eb4067c9a5bd37b1dd2fa36') in 0.004219583 seconds
+=======
+  Time since last request: 0.000022 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Medium/Textures/Right_Skybox_Space 2 Medium.png
+  artifactKey: Guid(5e95ac97d7cdba949ba381e8bdf6cbd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Medium/Textures/Right_Skybox_Space 2 Medium.png using Guid(5e95ac97d7cdba949ba381e8bdf6cbd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8d4f33f212305761e56c52a6f5e534eb') in 0.0192743 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000038 seconds.
   path: Assets/Samples/XR Interaction Toolkit/3.3.1/XR Interaction Simulator/UI/Headset/HeadsetOutline.png
   artifactKey: Guid(f9cb67e576d274c29bfa90e7bd16ba32) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
@@ -1473,3 +1995,92 @@ Received Import Request.
 Start importing Assets/Materials/HitRed.mat using Guid(b3a95aa64b7334dba8e8d2b1a2968466) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '713e48d4a88b6bc4121e3f67f996104e') in 0.00227175 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+=======
+  Time since last request: 0.000016 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 3/Medium
+  artifactKey: Guid(655200d143718c246a154f54810ccaea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 3/Medium using Guid(655200d143718c246a154f54810ccaea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd5b75f9f526dfc86984f61a9ef450f7f') in 0.0031001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Small
+  artifactKey: Guid(26826671c3e507849a7d1b86495d5062) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Small using Guid(26826671c3e507849a7d1b86495d5062) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1aa20c91414204d47730ea81dd13abe') in 0.0026483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 2/Medium/Textures/Back_Skybox_Space 2 Medium.png
+  artifactKey: Guid(9dd3467b025d4284fa9bf3f0a37cceb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 2/Medium/Textures/Back_Skybox_Space 2 Medium.png using Guid(9dd3467b025d4284fa9bf3f0a37cceb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4b389d1e57dd37e02cfedb5851a09435') in 0.0172615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Free Skyboxes - Space/SBS Space 4/Large/Textures/Right_Large.png
+  artifactKey: Guid(42dfd8aee52c64343912ad71b8ea87d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Free Skyboxes - Space/SBS Space 4/Large/Textures/Right_Large.png using Guid(42dfd8aee52c64343912ad71b8ea87d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ff066a9974a7500a2da92d858cb3d4d6') in 0.012442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.654 seconds
+Refreshing native plugins compatible for Editor in 3.15 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.677 seconds
+Domain Reload Profiling: 1330ms
+	BeginReloadAssembly (180ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (408ms)
+		LoadAssemblies (310ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (177ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (151ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (677ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (539ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (124ms)
+			ProcessInitializeOnLoadAttributes (338ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 4.09 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7122 unused Assets / (6.3 MB). Loaded Objects now: 7950.
+Memory consumption went from 201.1 MB to 194.8 MB.
+Total: 9.100900 ms (FindLiveObjects: 0.620400 ms CreateObjectMapping: 1.061700 ms MarkObjects: 4.279900 ms  DeleteObjects: 3.137300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
+>>>>>>> Stashed changes

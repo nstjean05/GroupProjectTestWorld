@@ -19,6 +19,8 @@ public class AsteroidShooter : MonoBehaviour {
     [Header("Asteroid")]
     public GameObject asteroidObject;
     public int asteroidHealth = 5;
+    [Header("Audio")]
+    public AudioClip shootSound;
 
     private float nextFireTime;
     private int currentHealth;
@@ -68,6 +70,7 @@ public class AsteroidShooter : MonoBehaviour {
     }
 
     void Shoot() {
+        if (shootSound != null) GetComponent<AudioSource>().PlayOneShot(shootSound);
         if (projectilePrefab != null && muzzlePoint != null) {
             GameObject projectile = Instantiate(projectilePrefab, muzzlePoint.position, muzzlePoint.rotation);
             projectile.GetComponent<Rigidbody>().linearVelocity = muzzlePoint.forward * shootSpeed;
@@ -77,7 +80,8 @@ public class AsteroidShooter : MonoBehaviour {
         UnityEngine.XR.InputDevice rightHand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
         rightHand.SendHapticImpulse(0, 0.5f, 0.1f);
     }
-
+   
+    
     public void HitAsteroid() {
         currentHealth--;
         Debug.Log("Asteroid hit! Health: " + currentHealth);
