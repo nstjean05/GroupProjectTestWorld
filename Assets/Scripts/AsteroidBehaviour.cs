@@ -6,6 +6,9 @@ public class AsteroidBehaviour : MonoBehaviour
     public float warningDistance; // Distance at which sound starts
     public float VolumeControl; // Adjust this to control overall volume
 
+    [Header("Asteroid")]
+    public int health = 5;
+
     private Transform ship;
     private AudioSource audioSource;
     private Vector3 rotationSpeed;
@@ -57,5 +60,11 @@ public class AsteroidBehaviour : MonoBehaviour
         {
             audioSource.volume = 0f; // Silent when far away
         }
+    }
+
+    public void TakeHit()
+    {
+        health--;
+        if (health <= 0) Destroy(gameObject);
     }
 }

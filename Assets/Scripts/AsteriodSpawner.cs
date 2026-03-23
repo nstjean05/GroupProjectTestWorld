@@ -47,7 +47,7 @@ public class AsteroidSpawner : MonoBehaviour
         GameObject asteroid = Instantiate(asteroidPrefab, spawnPos, randomRot);
 
         // Random size 
-        float randomSize = Random.Range(0.5f, 2f);
+        float randomSize = Random.Range(50f, 100f);
         asteroid.transform.localScale = Vector3.one * randomSize;
 
         Destroy(asteroid, 120f);

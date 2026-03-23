@@ -1620,8 +1620,6 @@ MonoBehaviour:
   fireRate: 0.5
   lineRenderer: {fileID: 293597356}
   laserGlow: {fileID: 0}
-  asteroidObject: {fileID: 0}
-  asteroidHealth: 5
 --- !u!1 &305930181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,11 +1649,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0391b633400a9524b887920aa893d67c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AsteroidSpawner
-  asteroidPrefab: {fileID: 5382423333067018563, guid: 838b92ae2ed831d4892bb3325104f3d7, type: 3}
-  minInterval: 25
+  asteroidPrefab: {fileID: 1368123815796378187, guid: 8233c7bc8a18c4a4db68bfaae2725b16, type: 3}
+  minInterval: 30
   maxInterval: 60
-  spawnRangeX: 5
-  spawnRangeZ: 25
+  spawnRangeX: 100
+  spawnRangeZ: 100
   spawnHeight: 5
 --- !u!4 &305930183
 Transform:
@@ -1666,8 +1664,8 @@ Transform:
   m_GameObject: {fileID: 305930181}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.01375, y: 0, z: 29.49056}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

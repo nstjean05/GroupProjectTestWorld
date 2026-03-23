@@ -16,17 +16,8 @@ public class AsteroidShooter : MonoBehaviour {
     [Header("Glow")]
     public Light laserGlow;
 
-    [Header("Asteroid")]
-    public GameObject asteroidObject;
-    public int asteroidHealth = 5;
-
     private float nextFireTime;
-    private int currentHealth;
-
-    void Start() {
-        currentHealth = asteroidHealth;
-    }
-
+    
     void Update() {
         UpdateLaser();
 
@@ -52,7 +43,7 @@ public class AsteroidShooter : MonoBehaviour {
         Ray ray = new Ray(muzzlePoint.position, muzzlePoint.forward);
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity)) {
             lineRenderer.SetPosition(1, hit.point);
-            laserColor = hit.collider.CompareTag("Asteroid") ? Color.red : Color.cyan;
+            laserColor = hit.collider.CompareTag("asteroidBoss") ? Color.red : Color.cyan;
         } else {
             lineRenderer.SetPosition(1, muzzlePoint.position + muzzlePoint.forward * 100f);
             laserColor = Color.cyan;
@@ -76,15 +67,5 @@ public class AsteroidShooter : MonoBehaviour {
 
         UnityEngine.XR.InputDevice rightHand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
         rightHand.SendHapticImpulse(0, 0.5f, 0.1f);
-    }
-
-    public void HitAsteroid() {
-        currentHealth--;
-        Debug.Log("Asteroid hit! Health: " + currentHealth);
-
-        if (currentHealth <= 0) {
-            Debug.Log("Asteroid destroyed!");
-            if (asteroidObject != null) asteroidObject.SetActive(false);
-        }
     }
 }
