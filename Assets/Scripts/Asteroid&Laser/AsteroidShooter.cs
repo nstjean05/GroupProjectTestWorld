@@ -16,6 +16,9 @@ public class AsteroidShooter : MonoBehaviour {
     [Header("Glow")]
     public Light laserGlow;
 
+    [Header("Audio")]
+    public AudioClip shootSound;
+
     private float nextFireTime;
     
     void Update() {
@@ -59,6 +62,7 @@ public class AsteroidShooter : MonoBehaviour {
     }
 
     void Shoot() {
+        if (shootSound != null) GetComponent<AudioSource>().PlayOneShot(shootSound);
         if (projectilePrefab != null && muzzlePoint != null) {
             GameObject projectile = Instantiate(projectilePrefab, muzzlePoint.position, muzzlePoint.rotation);
             projectile.GetComponent<Rigidbody>().linearVelocity = muzzlePoint.forward * shootSpeed;

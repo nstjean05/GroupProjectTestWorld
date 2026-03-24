@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Planets/Earth.blend.meta
 guid: e9f9f7a2359e1493eaf8be97f8273f3d
+========
+guid: 5bbf9ced187b440d5a04482f40f8bb9a
+>>>>>>>> origin/Everything-with-sound-effects:Assets/Planets/Saturn.fbx.meta
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
