@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 39
+  controlID: 50
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 40
+  controlID: 51
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 41
+  controlID: 52
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -1072,9 +1072,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -5.7759666, y: 1.8923802, z: 9.8397}
+    m_Target: {x: 18.437298, y: 4.552231, z: 25.845089}
     speed: 2
-    m_Value: {x: -5.7759666, y: 1.8923802, z: 9.8397}
+    m_Value: {x: 18.437298, y: 4.552231, z: 25.845089}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1120,9 +1120,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.482
   m_Rotation:
-    m_Target: {x: -0.10767827, y: 0.740964, z: -0.122473925, w: -0.65144753}
+    m_Target: {x: -0.07815915, y: -0.27103564, z: 0.022086956, w: -0.9591398}
     speed: 2
-    m_Value: {x: -0.10767795, y: 0.7409618, z: -0.12247356, w: -0.65144557}
+    m_Value: {x: -0.07963118, y: -0.26956254, z: 0.022373999, w: -0.95942396}
   m_Size:
     m_Target: 8.317896
     speed: 2
@@ -1201,12 +1201,12 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_Data: 49488
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -5108
-      - m_Data: -3716
+      - m_Data: -1294
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1465,10 +1465,7 @@ MonoBehaviour:
       m_Data: 56420
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51284
-    - m_Data: 51604
-    - m_Data: 1000000000
-    - m_Data: 2147483647
+    - m_Data: 55282
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1501,7 +1498,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51284
+    - m_Data: 55282
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1542,8 +1539,8 @@ MonoBehaviour:
     - m_Data: 54646
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Asteroid&Laser
-      m_OriginalName: Asteroid&Laser
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -1551,10 +1548,10 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_Data: 56420
+        m_Data: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
