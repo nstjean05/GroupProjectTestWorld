@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Asteroid
+  - ship
+  - Ship
+  - asteroidBoss
   layers:
   - Default
   - TransparentFX
