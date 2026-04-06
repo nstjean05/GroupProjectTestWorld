@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class BinocularsView : MonoBehaviour
 {
@@ -9,8 +10,16 @@ public class BinocularsView : MonoBehaviour
     public Camera binocularCamera;
     public Transform cameraRig;
 
+    [Header("HUD")]
+    public GameObject hudPanel;
+    public TextMeshProUGUI planetNameText;
+    public TextMeshProUGUI distanceText;
+    public TextMeshProUGUI diameterText;
+    public LineRenderer hudLine;
+
     private bool isActive = false;
     private Quaternion initialRigRotation;
+    private PlanetData currentPlanet;
 
     void OnEnable()
     {
@@ -29,6 +38,8 @@ public class BinocularsView : MonoBehaviour
     void Start()
     {
         binocularCamera.gameObject.SetActive(false);
+        if (hudPanel != null) hudPanel.SetActive(false);
+        if (hudLine != null) hudLine.enabled = false;
     }
 
     void OnGrab(SelectEnterEventArgs args)
@@ -44,6 +55,8 @@ public class BinocularsView : MonoBehaviour
         isActive = false;
         mainCamera.enabled = true;
         binocularCamera.gameObject.SetActive(false);
+        if (hudPanel != null) hudPanel.SetActive(false);
+        if (hudLine != null) hudLine.enabled = false;
     }
 
     void Update()
@@ -63,5 +76,42 @@ public class BinocularsView : MonoBehaviour
             binocularCamera.transform.Rotate(Vector3.right, -speed, Space.Self);
         if (Keyboard.current.downArrowKey.isPressed)
             binocularCamera.transform.Rotate(Vector3.right, speed, Space.Self);
+
+        PlanetData closestPlanet = null;
+        float closestAngle = 10f;
+
+        foreach (var planet in FindObjectsByType<PlanetData>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+        {
+            Vector3 dirToPlanet = (planet.transform.position - binocularCamera.transform.position).normalized;
+            float angle = Vector3.Angle(binocularCamera.transform.forward, dirToPlanet);
+            if (angle < closestAngle)
+            {
+                closestAngle = angle;
+                closestPlanet = planet;
+            }
+        }
+
+        if (closestPlanet != null)
+            ShowHUD(closestPlanet);
+        else
+        {
+            if (hudPanel != null) hudPanel.SetActive(false);
+            if (hudLine != null) hudLine.enabled = false;
+        }
+    }
+
+    void ShowHUD(PlanetData data)
+    {
+        if (hudPanel != null) hudPanel.SetActive(true);
+        if (planetNameText != null) planetNameText.text = data.planetName;
+        if (distanceText != null) distanceText.text = "Distance: " + data.distanceFromSun;
+        if (diameterText != null) diameterText.text = "Diameter: " + data.diameter;
+
+        if (hudLine != null)
+        {
+            hudLine.enabled = true;
+            hudLine.SetPosition(0, data.transform.position);
+            hudLine.SetPosition(1, hudPanel.transform.position);
+        }
     }
 }
