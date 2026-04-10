@@ -101,6 +101,8 @@ MonoBehaviour:
   moveSpeed: 2
   warningDistance: 25
   VolumeControl: 0.2
+  health: 5
+  asteroidPrefab: {fileID: 1368123815796378187}
 --- !u!82 &-2035896378537824338
 AudioSource:
   m_ObjectHideFlags: 0

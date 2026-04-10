@@ -1,31 +1,27 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class AsteroidBehaviour : MonoBehaviour
 {
-    public float moveSpeed = 2f;
-    public float warningDistance; // Distance at which sound starts
-    public float VolumeControl; // Adjust this to control overall volume
-
+    public float moveSpeed = 1.45f;
+    public float warningDistance;
+    public float VolumeControl;
     [Header("Asteroid")]
     public int health = 5;
+    public GameObject asteroidPrefab;  // ✅ drag your asteroid prefab here
 
     private Transform ship;
     private AudioSource audioSource;
     private Vector3 rotationSpeed;
 
+    public event System.Action OnDestroyed;
+
     void Start()
     {
-        // Find the ship
         GameObject shipObject = GameObject.FindWithTag("Ship");
-        if (shipObject != null)
-        {
-            ship = shipObject.transform;
-        }
-
-        // Grab the Audio Source on this asteroid
+        if (shipObject != null) ship = shipObject.transform;
         audioSource = GetComponent<AudioSource>();
-
-        // Random spin
         rotationSpeed = new Vector3(
             Random.Range(-50f, 50f),
             Random.Range(-50f, 50f),
@@ -36,35 +32,72 @@ public class AsteroidBehaviour : MonoBehaviour
     void Update()
     {
         if (ship == null) return;
-
-        // Move toward ship
         transform.position = Vector3.MoveTowards(
             transform.position,
             ship.position,
             moveSpeed * Time.deltaTime
         );
-
-        // Rotate
         transform.Rotate(rotationSpeed * Time.deltaTime);
-
-        // Calculate distance to ship
         float distance = Vector3.Distance(transform.position, ship.position);
-
-        // Map distance to volume (closer = louder)
         if (distance < warningDistance)
         {
-            float volume = (1f - (distance / warningDistance)) * VolumeControl; // Scale by VolumeControl
+            float volume = (1f - (distance / warningDistance)) * VolumeControl;
             audioSource.volume = volume;
         }
         else
         {
-            audioSource.volume = 0f; // Silent when far away
+            audioSource.volume = 0f;
         }
     }
 
     public void TakeHit()
     {
         health--;
-        if (health <= 0) Destroy(gameObject);
+        if (health <= 0) DestroyAsteroid();
+    }
+
+    void DestroyAsteroid()
+    {
+        float currentSize = transform.localScale.x;
+        if (currentSize > 350f && asteroidPrefab != null)
+        {
+            SpawnSplit(currentSize);
+            SpawnSplit(currentSize);
+        }
+
+        OnDestroyed?.Invoke();
+        OnDestroyed = null;  // clear it so OnDestroy doesn't fire it again
+        Destroy(gameObject);
+    }
+
+   void SpawnSplit(float parentSize)
+{
+    // spawn exactly where parent died
+    GameObject chunk = Instantiate(asteroidPrefab, transform.position, Random.rotation);
+
+    float splitSize = (parentSize / 2f) * Random.Range(0.8f, 1.2f);
+    chunk.transform.localScale = Vector3.one * splitSize;
+
+    AsteroidBehaviour behaviour = chunk.GetComponent<AsteroidBehaviour>();
+    if (behaviour != null)
+    {
+        behaviour.moveSpeed = moveSpeed * 1.3f;
+        behaviour.asteroidPrefab = asteroidPrefab;
+    }
+
+    Destroy(chunk, 120f);
+}
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ship"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
+    void OnDestroy()
+    {
+        OnDestroyed?.Invoke(); 
     }
 }
